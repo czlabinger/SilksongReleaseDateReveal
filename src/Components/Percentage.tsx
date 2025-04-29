@@ -12,18 +12,19 @@ const Percentage: React.FC<PercentageProps> = ({ date }) => {
   targetDate.setHours(0, 0, 0, 0);
 
   const timeDiff = targetDate.getTime() - currentDate.getTime();
-  const totalDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+  const daysRemaining = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
 
   let percentage: number;
-  if (totalDays <= 0) {
-    percentage = 100;
+  if (daysRemaining <= 0) {
+    percentage = 100; 
   } else {
-    percentage = (1 / totalDays) * 100;
+    percentage = (1 / daysRemaining) * 100;
   }
 
   return (
     <div>
-      {percentage.toFixed(20)}%
+      {percentage.toFixed(18)}%
     </div>
   );
 };

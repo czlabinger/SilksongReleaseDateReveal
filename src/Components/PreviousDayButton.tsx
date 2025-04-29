@@ -24,11 +24,12 @@ const PreviousDayButton: React.FC<PreviousDayButtonProps> = ({ currentDate, setD
   return (
     <div>
       <Button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="relative overflow-hidden bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onPress={handleClick}
       >
-        Previous Day
-      </Button>
+            Previous Day
+        </Button>
+
     </div>
   );
 };

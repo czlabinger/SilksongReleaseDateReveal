@@ -11,20 +11,20 @@ type NextDayButtonProps = {
 const NextDayButton: React.FC<NextDayButtonProps> = ({ currentDate, setDate }) => {
   const handleClick = () => {
     const nextDate = new Date(currentDate);
-    nextDate.setDate(nextDate.getDate() + 1);
 
-    if (nextDate >= TARGET_DATE) {
+    if (nextDate > TARGET_DATE) {
       alert("The date is already past the target date.");
       return;
     }
 
+    nextDate.setDate(nextDate.getDate() + 1);
     setDate(nextDate);
   };
 
   return (
     <div>
       <Button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="relative overflow-hidden bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onPress={handleClick}
       >
         Next Day
