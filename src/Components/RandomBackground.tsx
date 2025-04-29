@@ -54,7 +54,7 @@ const RandomBackgroundImages: React.FC<RandomBackgroundImagesProps> = ({
   opacity = 0.18,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const imageUrls = IMAGE_FILENAMES.map(filename => `/images/${filename}`);
+  const imageUrls = IMAGE_FILENAMES.map(filename => `/public/images/${filename}`);
 
 
   const dimensionsList = imageUrls.map(useImageDimensions);
