@@ -1,1 +1,1 @@
-A simple React/Next.js site that shows the probability that Hollow Knight: Silksong's release date will be announced TOMORROW.
+A React/Next.js site that shows the probability that Hollow Knight: Silksong's release date will be announced TOMORROW.
