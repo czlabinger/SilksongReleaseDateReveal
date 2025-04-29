@@ -58,7 +58,7 @@ const RandomBackgroundImages: React.FC<RandomBackgroundImagesProps> = ({
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setUrl(window.location.href + window.location.pathname);
+      setUrl(window.location.href + 'SilksongReleaseDateReveal');
     }
   }, []);
 
