@@ -11,6 +11,7 @@ const IMAGE_FILENAMES = [
   'clown.png',
   'office.png',
   'banner.png',
+  'beliefUsedToBe.png',
 ];
 
 const MAX_ATTEMPTS = 100;
