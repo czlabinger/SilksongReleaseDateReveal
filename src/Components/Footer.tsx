@@ -4,13 +4,13 @@ const Footer = () => {
     return (
         <footer className="mt-auto text-center py-4">
             <span className="text-gray-600 text-sm">
-                Percentage is calculated until 18th September 2025. This is based on{" "}
+                Percentage is calculated until 25th December 2025. This is based on{" "}
                 <Link
-                    href="https://www.reddit.com/r/Silksong/comments/1kah2sp/skong_screenshot_shown_by_acmi_it_will_100_be_in/"
+                    href="https://www.reddit.com/r/Silksong/comments/1l6k3vt/thank_you_leth/"
                     className="text-blue-600 underline"
                     target="_blank"
                 >
-                    this Reddit post.
+                    this Reddit post / Discord message.
                 </Link>
             </span>
             <br />

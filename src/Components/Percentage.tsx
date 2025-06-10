@@ -6,7 +6,7 @@ type PercentageProps = {
 
 const Percentage: React.FC<PercentageProps> = ({ date }) => {
   const currentDate = new Date(date);
-  const targetDate = new Date("2025-09-18");
+  const targetDate = new Date("2025-12-25");
 
   currentDate.setHours(0, 0, 0, 0);
   targetDate.setHours(0, 0, 0, 0);
