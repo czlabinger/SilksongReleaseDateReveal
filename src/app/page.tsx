@@ -1,39 +1,40 @@
 "use client";
 
-import Percentage from "@/Components/Percentage";
+// import Percentage from "@/Components/Percentage";
 import Footer from "@/Components/Footer";
-import { useState } from "react";
-import NextDayButton from "@/Components/NextDayButton";
-import PreviousDayButton from "@/Components/PreviousDayButton";
+// import { useState } from "react";
+// import NextDayButton from "@/Components/NextDayButton";
+// import PreviousDayButton from "@/Components/PreviousDayButton";
 import RandomBackgroundImages from '@/Components/RandomBackground';
 
 export default function Home() {
 
-  function getOrdinalSuffix(day: number): string {
-    if (day > 3 && day < 21) return 'th';
-    switch (day % 10) {
-      case 1: return 'st';
-      case 2: return 'nd';
-      case 3: return 'rd';
-      default: return 'th';
-    }
-  }
+  // function getOrdinalSuffix(day: number): string {
+  //   if (day > 3 && day < 21) return 'th';
+  //   switch (day % 10) {
+  //     case 1: return 'st';
+  //     case 2: return 'nd';
+  //     case 3: return 'rd';
+  //     default: return 'th';
+  //   }
+  // }
   
-  function formatDateDDthMMYYYY(date: Date): string {
-    const day = date.getDate();
-    const suffix = getOrdinalSuffix(day);
-    const month = date.toLocaleString('en-US', { month: 'long' });
-    const year = date.getFullYear();
-    return `${day}${suffix} of ${month} ${year}`;
-  }
+  // function formatDateDDthMMYYYY(date: Date): string {
+  //   const day = date.getDate();
+  //   const suffix = getOrdinalSuffix(day);
+  //   const month = date.toLocaleString('en-US', { month: 'long' });
+  //   const year = date.getFullYear();
+  //   return `${day}${suffix} of ${month} ${year}`;
+  // }
 
-  const [currentDate, setCurrentDate] = useState(new Date());
+  // const [currentDate, setCurrentDate] = useState(new Date());
 
   return (
     <>
       <RandomBackgroundImages/>
       <div className="text-center pt-32 flex flex-col min-h-screen">
-        The probability of a release date for <strong>Silksong</strong> on the <strong>{formatDateDDthMMYYYY(currentDate)}</strong>
+        <h1 className="text-4xl font-bold mb-4">Silksong Release Date: September 4th 2025</h1>
+        {/* The probability of a release date for <strong>Silksong</strong> on the <strong>{formatDateDDthMMYYYY(currentDate)}</strong>
 
         <div className="flex items-center justify-center gap-8 pt-8">
           <PreviousDayButton currentDate={currentDate} setDate={setCurrentDate} />
@@ -43,7 +44,7 @@ export default function Home() {
           </div>
           
           <NextDayButton currentDate={currentDate} setDate={setCurrentDate} />
-        </div>
+        </div> */}
 
         <Footer />
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="mt-auto text-center py-4">
-            <span className="text-gray-600 text-sm">
+            {/* <span className="text-gray-600 text-sm">
                 Percentage is calculated until 25th December 2025. This is based on{" "}
                 <Link
                     href="https://www.reddit.com/r/Silksong/comments/1l6k3vt/thank_you_leth/"
@@ -12,7 +12,7 @@ const Footer = () => {
                 >
                     this Reddit post / Discord message.
                 </Link>
-            </span>
+            </span> */}
             <br />
 
             <span className="text-gray-600 text-sm">
